@@ -54,7 +54,7 @@ pipeline {
                     """
                     // Utilise l'ID exact du Token Github ajouté dans Jenkins
                     withCredentials([usernamePassword(credentialsId: 'github-creds', passwordVariable: 'GIT_PAT', usernameVariable: 'GIT_USER')]) {
-                        sh 'git push https://${GIT_USER}:${GIT_PAT}@github.com/souadaqabli/petclinic-gitops.git HEAD:main'
+                        sh 'git push https://${GIT_USER}:${GIT_PAT}@github.com/souadaqabli/Petclinic.git HEAD:main'
                     }
                 }
             }
