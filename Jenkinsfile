@@ -46,7 +46,7 @@ pipeline {
             steps {
                 script {
                     sh """
-                        sed -i 's|image: TON_PSEUDO_DOCKERHUB/petclinic:.*|image: souads20/petclinic:${env.BUILD_ID}|g' k8s/deployment.yaml
+                        sed -i "s|image: souads20/petclinic:.*|image: souads20/petclinic:${env.BUILD_ID}|g" k8s/deployment.yaml
                         git config user.email "jenkins@devops.com"
                         git config user.name "Jenkins CI"
                         git add k8s/deployment.yaml
