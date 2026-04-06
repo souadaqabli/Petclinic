@@ -5,10 +5,15 @@ This project demonstrates the implementation of a complete DevOps architecture (
 ## 🏗️ Project Architecture
 1. **Code & Versioning:** GitHub
 2. **CI (Continuous Integration):** Jenkins (Maven Compilation, SonarQube Analysis, Docker Build)
+![sonar](./images/quality%20gate.png)
+![pipeline](./images/pipeline%20successed.png)
 3. **Image Registry:** DockerHub (`souads20/petclinic`)
+![DockerHube](./images/image%20docker%20sur%20deckerhub.png)
 4. **CD (Continuous Deployment):** ArgoCD (GitOps Methodology)
+![ArgoCD](./images/argocd%20healthy.png)
 5. **Infrastructure:** Local Kubernetes Cluster (Minikube)
 6. **Observability:** Grafana & Prometheus
+![Grafana](./images/grafana%20dashboard%20nodes.png)
 
 ---
 
